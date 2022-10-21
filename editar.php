@@ -40,9 +40,9 @@
                 <input type="email" name="email" value='<?= $result[2] ?>' required><br>
             </div><br>
             <div>
-                <label> Senha: </label><br>
+                <label>Senha:</label><br>
                 <label>
-                    <input type="password" name="senha" value='<?= $result[4] ?>' required><br>
+                <input type="password" name="senha" value='<?= $result[4] ?>' required><br>
                 </label><br>
             </div>
          <br>
