@@ -11,7 +11,7 @@
 
     //echo mysqli_num_rows($sql_logar); die; 
 
-if(mysqli_num_rows($sql_logar)!=0){
+if(mysqli_num_rows($sql_logar) ===1){
 	header('location:principal.php');
 
 } else{

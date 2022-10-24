@@ -16,7 +16,7 @@
     <body>
         <h1>Usuarios:</h1>
         <hr>
-            <table rules="all">
+            <table rules="all" border="2">
                 
                 <thead>  
                     <tr>
@@ -26,6 +26,8 @@
                     <th>Genero</th>
                     <th>Senha</th>
                     <th>Sobre</th>
+                    <th>Excluir</th>
+                    <th>Editar</th>
                     </tr>
                 </thead>
                 
@@ -34,6 +36,17 @@
                     <?php
                     
                         $sql_consulta=mysqli_query( $conn, "SELECT * FROM cadastro" );
+                        if (mysqli_num_rows($sql_consulta) ===0) {
+                            
+                        ?>
+                            <tr>
+                                <td colspan="8">Não temos registros cadastrados</td>
+                            </tr>
+                    <?php
+
+                    }
+                        
+
 
                         while($dados=mysqli_fetch_array($sql_consulta)) {
                     ?>  

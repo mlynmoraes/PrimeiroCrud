@@ -10,7 +10,7 @@
                 
         $sql = mysqli_query( $conn, "INSERT INTO cadastro (nome, email, genero, senha, sobrevoce) VALUES ('$nome', '$email', '$genero', '$senha', '$sobrevoce')" ); 
 
-        if ($sql==true) {
+        if ($sql) {
             echo "<script>
                 alert('Usuário cadastrado com sucesso!');
                 window.location.href='login.php';
